@@ -10,7 +10,7 @@ export class MovingShapesComponent implements OnInit {
     constructor() { }
 
     ngOnInit(): void {
-        console.log('his');
+        console.debug('MovingShapesComponent');
     }
 
 }

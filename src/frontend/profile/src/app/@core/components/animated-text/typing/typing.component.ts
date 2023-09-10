@@ -37,7 +37,7 @@ export class TypingComponent implements OnChanges {
     ngOnChanges(changes: SimpleChanges): void {
         //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
         //Add '${implements OnChanges}' to the class.
-        if (changes.wordList) {
+        if (changes && changes['wordList']) {
             this.initEffect();
         }
     }

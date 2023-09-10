@@ -13,7 +13,8 @@ import { ExperienceItem } from '../../interface/experience-item';
     styleUrls: ['./experience-card.component.scss']
 })
 export class ExperienceCardComponent implements OnInit {
-    @Input() experienceItem?: ExperienceItem;
+    @Input()
+    experienceItem!: ExperienceItem;
 
     constructor(
         private modalService: NgbModal,
