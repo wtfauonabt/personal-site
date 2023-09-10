@@ -1,9 +1,10 @@
 {
   "extends": [
-    "../../../../.eslintrc.json"
+    "../../../.eslintrc.json"
   ],
   "ignorePatterns": [
-    "!**/*"
+    "/**/node_modules/*",
+    "node_modules/*"
   ],
   "overrides": [
     {

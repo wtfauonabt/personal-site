@@ -3,7 +3,7 @@
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "app",
-  "sourceRoot": "src/app/frontend/profile/src",
+  "sourceRoot": "src/frontend/profile/src",
   "tags": [],
   "targets": {
     "build": {
@@ -12,19 +12,19 @@
         "{options.outputPath}"
       ],
       "options": {
-        "outputPath": "dist/src/app/frontend/profile",
-        "index": "src/app/frontend/profile/src/index.html",
-        "main": "src/app/frontend/profile/src/main.ts",
+        "outputPath": "dist/src/frontend/profile",
+        "index": "src/frontend/profile/src/index.html",
+        "main": "src/frontend/profile/src/main.ts",
         "polyfills": [
           "zone.js"
         ],
-        "tsConfig": "src/app/frontend/profile/tsconfig.app.json",
+        "tsConfig": "src/frontend/profile/tsconfig.app.json",
         "assets": [
-          "src/app/frontend/profile/src/favicon.ico",
-          "src/app/frontend/profile/src/assets"
+          "src/frontend/profile/src/favicon.ico",
+          "src/frontend/profile/src/assets"
         ],
         "styles": [
-          "src/app/frontend/profile/src/styles.scss"
+          "src/frontend/profile/src/styles.scss"
         ],
         "scripts": []
       },
@@ -80,8 +80,8 @@
       ],
       "options": {
         "lintFilePatterns": [
-          "src/app/frontend/profile/**/*.ts",
-          "src/app/frontend/profile/**/*.html"
+          "src/frontend/profile/**/*.ts",
+          "src/frontend/profile/**/*.html"
         ]
       }
     },
@@ -91,7 +91,7 @@
         "{workspaceRoot}/coverage/{projectRoot}"
       ],
       "options": {
-        "jestConfig": "src/app/frontend/profile/jest.config.ts",
+        "jestConfig": "src/frontend/profile/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {

@@ -849,4 +849,3 @@ nx affected:e2e</pre>
     })();
     return NxWelcomeComponent = _classThis;
 })();
-//# sourceMappingURL=nx-welcome.component.js.map
