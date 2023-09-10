@@ -17,3 +17,5 @@
 - [ ] [task/feature-0005](https://github.com/wtfauonabt/personal-site/tree/task/feature-0005) Add Dockerfile and docker compose for Profile Frontend
 
 - [ ] [task/feature-0006](https://github.com/wtfauonabt/personal-site/tree/task/feature-0006) Add terraform with EC2, route53 security group
+
+- [ ] [task/feature-0007](https://github.com/wtfauonabt/personal-site/tree/task/feature-0007) Revamp the design with 3d animation and behavioural on touch
