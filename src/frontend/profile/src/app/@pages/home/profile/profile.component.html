@@ -1,0 +1,31 @@
+<section id="profile" class="profile">
+  <sy-animated-background [type]="'moving-shapes'"></sy-animated-background>
+
+  <div class="row">
+    <div class="col-12 col-md-4 d-none d-md-block">
+      <sy-block-menu></sy-block-menu>
+    </div>
+    <div class="col-12 col-md-8">
+      <div class="text-area row">
+        <div class="center-logo pt-4">
+          <sy-svg [filePath]="'assets/img/logo/2.svg'"></sy-svg>
+        </div>
+        <div class="title">
+          <sy-animated-text
+            [type]="'typing'"
+            [wordList]="titleWordList"
+            (animationCompleted)="onTitleAnimationComplete()"
+          ></sy-animated-text>
+        </div>
+
+        <div class="profile">
+          <sy-animated-text
+            [type]="'typing'"
+            [wordList]="profileWordList"
+            [animationSpeed]="20"
+          ></sy-animated-text>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

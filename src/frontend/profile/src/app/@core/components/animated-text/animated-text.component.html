@@ -1,0 +1,10 @@
+<div [ngSwitch]="type" class="text-area">
+  <div *ngSwitchCase="'typing'">
+    <sy-typing
+      [classList]="classList"
+      [wordList]="wordList"
+      [animationSpeed]="animationSpeed"
+      (animationCompleted)="onAnimationCompleted()"
+    ></sy-typing>
+  </div>
+</div>

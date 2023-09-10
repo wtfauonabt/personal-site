@@ -1,14 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
 
 @Component({
-  standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+    selector: 'sy-root',
+    template: '<router-outlet></router-outlet>',
 })
 export class AppComponent {
-  title = 'profile';
+    title = 'frontend';
 }

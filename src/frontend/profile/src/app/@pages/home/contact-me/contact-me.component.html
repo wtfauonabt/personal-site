@@ -1,0 +1,76 @@
+<section id="contact-me" class="contact-me">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h2>Contact Me</h2>
+      <hr class="star-primary" />
+    </div>
+    <form
+      class="form-horizontal"
+      [formGroup]="contactForm"
+      (ngSubmit)="onSubmitForm()"
+    >
+      <div class="col-12">
+        <!--Will be used to display an alert to the user-->
+        {{ message }}
+      </div>
+      <div class="col-12 pt-2">
+        <label for="name" class="col-12 control-label">Name</label>
+        <input
+          class="form-control"
+          type="text"
+          id="name"
+          name="name"
+          formControlName="name"
+          placeholder="Name"
+        />
+      </div>
+      <div class="col-12 pt-2">
+        <label for="email" class="col-12 control-label">Email</label>
+        <input
+          class="form-control"
+          type="email"
+          id="email"
+          name="email"
+          formControlName="email"
+          placeholder="example@domain.com"
+        />
+      </div>
+      <div class="col-12 pt-2">
+        <label for="phone" class="col-12 control-label">Phone</label>
+        <input
+          class="form-control"
+          type="phone"
+          id="phone"
+          name="phone"
+          formControlName="phone"
+          placeholder="61234567"
+        />
+      </div>
+      <div class="col-12 pt-2">
+        <label for="message" class="col-12 control-label">Message</label>
+        <textarea
+          class="form-control"
+          rows="4"
+          name="message"
+          formControlName="message"
+        ></textarea>
+      </div>
+      <div class="col-12 pt-2">
+        <label for="human" class="col-12 control-label">2 + 3 = ?</label>
+        <input
+          type="text"
+          class="form-control"
+          id="human"
+          name="human"
+          [(ngModel)]="humanCheck"
+          placeholder="Your Answer"
+        />
+      </div>
+      <div class="col-12 pt-2">
+        <button class="btn btn-secondary float-end disabled" type="submit">
+          Temporary Unavailable
+        </button>
+      </div>
+    </form>
+  </div>
+</section>

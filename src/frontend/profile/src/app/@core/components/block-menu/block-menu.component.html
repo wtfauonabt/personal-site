@@ -1,0 +1,14 @@
+<div class="block-menu" *ngIf="menuList">
+  <ul>
+    <li
+      *ngFor="let item of menuList; let i = index"
+      style="--i:{{ menuList.length - i }}"
+    >
+      <a href="{{ item.endpoint }}">
+        <div class="top"></div>
+        <div class="side"></div>
+        {{ item.name }}
+      </a>
+    </li>
+  </ul>
+</div>

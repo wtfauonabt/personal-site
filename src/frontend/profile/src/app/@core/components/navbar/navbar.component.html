@@ -1,0 +1,82 @@
+<nav class="navbar navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <div class="logo">
+        <sy-svg [filePath]="'assets/img/logo/5.svg'"></sy-svg>
+      </div>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item" *ngFor="let item of menuList">
+          <a class="nav-link" aria-current="page" [href]="item.endpoint">
+            {{ item.name }}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Navigation -->
+<!-- <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+     -->
+<!-- Brand and toggle get grouped for better mobile display -->
+<!-- <div class="navbar-header page-scroll">
+      <button
+        type="button"
+        class="navbar-toggle"
+        data-toggle="collapse"
+        data-target="#bs-example-navbar-collapse-1"
+      >
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#page-top">SY</a>
+    </div> -->
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+<!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden">
+          <a href="#page-top"></a>
+        </li>
+        <li class="page-scroll">
+          <a href="#profile">Profile</a>
+        </li>
+        <li class="page-scroll">
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li class="page-scroll">
+          <a href="#skills">Skills</a>
+        </li>
+        <li class="page-scroll">
+          <a href="#experience">Experience</a>
+        </li>
+        <li class="page-scroll">
+          <a href="#contact">Contact Me</a>
+        </li>
+        <li class="download">
+          <a id="pdf" href="src/Curriculum Vitae Stanley Chi Fung Yeung.pdf"
+            >CV Download &raquo;</a
+          >
+        </li>
+      </ul>
+    </div> -->
+<!-- /.navbar-collapse -->
+<!-- </div> -->
+<!-- /.container-fluid -->
+<!-- </nav> -->

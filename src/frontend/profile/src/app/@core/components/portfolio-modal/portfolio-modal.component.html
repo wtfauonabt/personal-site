@@ -1,0 +1,43 @@
+<div class="modal-header">
+  <h4 class="modal-title">{{ portfolioItem?.title }}</h4>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="activeModal.dismiss('Cross click')"
+  ></button>
+</div>
+<div class="modal-body">
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <img [src]="portfolioItem?.logoImgPath" class="modal_img" />
+    </div>
+    <div class="col-12 col-md-8">
+      <span [innerHtml]="portfolioItem?.description"></span>
+    </div>
+    <div class="col-12 pt-2">
+      <span
+        *ngFor="let skill of portfolioItem?.skillList"
+        class="label label-{{ skill }} mt-1"
+      >
+        {{ skill }}
+      </span>
+    </div>
+  </div>
+</div>
+<div class="modal-footer">
+  <a
+    *ngFor="let button of portfolioItem?.buttonList"
+    class="btn btn-outline-dark float-start"
+    [href]="button.endpoint"
+  >
+    {{ button.title }}
+  </a>
+  <button
+    type="button"
+    class="btn btn-outline-dark"
+    (click)="activeModal.close('Close click')"
+  >
+    Close
+  </button>
+</div>

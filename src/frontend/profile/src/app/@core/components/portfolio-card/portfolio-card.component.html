@@ -1,0 +1,10 @@
+<div *ngIf="portfolioItem" class="portfolio-card" (click)="onClickCard()">
+  <img [src]="portfolioItem.logoImgPath" class="card_image" alt="" />
+  <div class="card_overlay d-none d-md-block">
+    <!-- <div class="card_header"> -->
+    <h3 class="card_title">{{ portfolioItem.title }}</h3>
+    <!-- </div> -->
+    <span class="card_description" [innerHtml]="portfolioItem.description">
+    </span>
+  </div>
+</div>

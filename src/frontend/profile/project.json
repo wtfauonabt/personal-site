@@ -2,7 +2,7 @@
   "name": "profile",
   "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "app",
+  "prefix": "sy",
   "sourceRoot": "src/frontend/profile/src",
   "tags": [],
   "targets": {

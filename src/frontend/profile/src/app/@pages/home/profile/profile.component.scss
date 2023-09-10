@@ -1,0 +1,48 @@
+.profile {
+  width: 100%;
+  height: 100vh;
+  //   background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+  .text-area {
+    width: 100%;
+    height: 100%;
+
+    font-family: verdana;
+
+    .center-logo {
+      text-align: center;
+      fill: #ffffff;
+    }
+
+    .title {
+      min-width: 100%;
+      height: 25vh;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-align: center;
+
+      font-size: 1.5rem;
+      font-weight: 700;
+
+      color: #ffffff;
+
+      text-transform: uppercase;
+      text-shadow: 2px 2px #515151;
+      //   -webkit-box-reflect: below -1px linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+    }
+    .profile {
+      min-width: 100%;
+      height: 30vh;
+      display: flex;
+
+      text-align: left;
+
+      font-size: 1rem;
+      font-weight: 500;
+
+      color: #fff;
+    }
+  }
+}

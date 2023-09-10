@@ -1,0 +1,27 @@
+<section id="experience" class="experience">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h2>Commercial Experience</h2>
+      <hr class="star-primary" />
+    </div>
+    <div *ngFor="let item of experienceList" class="col-4 col-lg-3 pb-3">
+      <sy-experience-card [experienceItem]="item"></sy-experience-card>
+    </div>
+  </div>
+</section>
+
+<!-- <div>
+  <ul class="timeline">
+    <li
+      *ngFor="let item of experienceList; let index = index"
+      class="{{ index % 2 !== 0 ? 'timeline-inverted' : '' }}"
+    >
+      <div class="timeline-badge">
+        <i data-src="item.logoImgPath"></i>
+      </div>
+      <div class="timeline-panel">
+        <sy-experience-card [experienceItem]="item"></sy-experience-card>
+      </div>
+    </li>
+  </ul>
+</div> -->

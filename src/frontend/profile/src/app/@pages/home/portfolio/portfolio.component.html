@@ -1,0 +1,11 @@
+<section id="portfolio" class="portfolio">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h2>Portfolio</h2>
+      <hr class="star-primary" />
+    </div>
+    <div *ngFor="let item of portfolioList" class="col-4 col-lg-3 pb-3">
+      <sy-portfolio-card [portfolioItem]="item"></sy-portfolio-card>
+    </div>
+  </div>
+</section>

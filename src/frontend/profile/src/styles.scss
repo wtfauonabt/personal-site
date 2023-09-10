@@ -1,1 +1,91 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /*****************************
+  ** Skill Option START ********
+  *****************************/
+  
+  /** Label **/
+  .label-php {
+    border: solid #8892bf;
+    background-color: #8892bf;
+    color: #000;
+  }
+  .label-mysql {
+    border: solid #00758f;
+    background-color: #00758f;
+    color: #f29111;
+  }
+  .label-html {
+    border: solid #e44d26;
+    background-color: #e44d26;
+    color: #fff;
+  }
+  .label-css {
+    border: solid #379ad6;
+    background-color: #379ad6;
+    color: #fff;
+  }
+  .label-aws {
+    border: solid #ff9900;
+    background-color: #ff9900;
+    color: #000;
+  }
+  .label-android {
+    border: solid #a4ca39;
+    background-color: #a4ca39;
+    color: #fff;
+  }
+  .label-java {
+    border: solid #ea2d2f;
+    background-color: #fff;
+    color: #ea2d2f;
+  }
+  .label-wordpress {
+    border: solid #464646;
+    background-color: #464646;
+    color: #21759b;
+  }
+  .label-zencart {
+    border: solid #000;
+    background-color: #000;
+    color: #e28d2a;
+  }
+  .label-magento {
+    border: solid #e28d2a;
+    background-color: #ffffff;
+    color: #e28d2a;
+  }
+  .label-ionic {
+    border: solid #4e8ef7;
+    background-color: #ffffff;
+    color: #4e8ef7;
+  }
+  .label-opensearch {
+    border: solid #4e8ef7;
+    background-color: #4e8ef7;
+    color: #ffffff;
+  }
+  .label-nodejs {
+    border: solid #04b250;
+    background-color: #ffffff;
+    color: #04b250;
+  }
+  .label-mongodb {
+    border: solid #04b250;
+    background-color: #04b250;
+    color: #ffffff;
+  }
+  
+  /*****************************
+  ** Skill Option END **********
+  *****************************/
+  
