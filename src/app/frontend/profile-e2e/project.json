@@ -1,0 +1,30 @@
+{
+  "name": "profile-e2e",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "src/app/frontend/profile-e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/playwright:playwright",
+      "outputs": [
+        "{workspaceRoot}/dist/.playwright/src/app/frontend/profile-e2e"
+      ],
+      "options": {
+        "config": "src/app/frontend/profile-e2e/playwright.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "src/app/frontend/profile-e2e/**/*.{js,ts}"
+        ]
+      }
+    }
+  },
+  "implicitDependencies": [
+    "profile"
+  ]
+}
