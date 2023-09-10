@@ -21,6 +21,7 @@
     "bootstrap": "^5.3.1",
     "eslint-plugin-prettier": "^4.0.0",
     "gts": "^5.0.1",
+    "jquery": "^3.7.1",
     "ngx-page-scroll-core": "^11.0.0",
     "node-gyp": "^9.4.0",
     "pino": "^8.15.1",
