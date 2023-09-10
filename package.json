@@ -1,5 +1,20 @@
 {
   "dependencies": {
+    "gts": "^5.0.1",
     "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "gts": "^5.0.1",
+    "typescript": "~5.1.6",
+    "@types/node": "20.4.6"
+  },
+  "scripts": {
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "yarn run compile",
+    "pretest": "yarn run compile",
+    "posttest": "yarn run lint"
   }
 }
