@@ -19,6 +19,7 @@ import {
 export class SvgComponent implements OnChanges {
 
     @Input() filePath?: string;
+    @Input() color: string = 'grey';
 
     svgContent?: SafeHtml;
 
@@ -42,8 +43,24 @@ export class SvgComponent implements OnChanges {
         this.httpClient
             .get(`${this.filePath}`, { responseType: 'text' })
             .subscribe(value => {
+                value = this.modifyFillColor(value);
                 this.svgContent = this.sanitizer.bypassSecurityTrustHtml(value);
+                console.log(value);
             });
     }
 
+
+    modifyFillColor(svg: string): string {
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(svg, 'image/svg+xml');
+        const svgElement = doc.getElementsByTagName('svg')[0];
+        const paths = svgElement.getElementsByTagName('path');
+    
+        for (let i = 0; i < paths.length; i++) {
+          const path = paths[i];
+          path.setAttribute('fill', this.color);
+        }
+    
+        return new XMLSerializer().serializeToString(svgElement);
+      }
 }

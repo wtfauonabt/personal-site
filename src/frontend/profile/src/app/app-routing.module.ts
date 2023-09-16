@@ -6,11 +6,6 @@ import {
 } from '@angular/router';
 
 export const routes: Routes = [
-    // {
-    //     path: 'auth',
-    //     loadChildren: () => import('./auth/auth.module')
-    //         .then(m => m.AuthPageModule),
-    // },
     {
         path: '',
         loadChildren: () => import('@pages/pages.module')
